@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/worldnote_user_img"
+        android:layout_width="@dimen/note_img_width"
+        android:layout_height="@dimen/note_img_height"
+        android:layout_margin="@dimen/note_img_margin"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/worldnote_user_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/worldnote_user_img"
+        android:layout_toRightOf="@+id/worldnote_user_img"
+        android:text="@string/travel_user_title" />
+
+
+    <TextView
+        style="@style/text_travel_focus"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/text_travel_focus_marginright"
+        android:text="@string/text_travel_focus" />
+
+
+
+</RelativeLayout>

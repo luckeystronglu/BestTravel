@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/travel_user_img"
+        android:layout_width="@dimen/note_img_width"
+        android:layout_height="@dimen/note_img_height"
+        android:layout_margin="@dimen/note_img_margin"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/travel_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/travel_user_img"
+        android:layout_toRightOf="@+id/travel_user_img"
+        android:text="@string/travel_user_title" />
+
+    <TextView
+        android:id="@+id/travel_user_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/travel_user_title"
+        android:layout_below="@+id/travel_user_title"
+        android:layout_marginTop="@dimen/travel_user_from_margintop"
+        android:layout_toRightOf="@+id/travel_user_img"
+        android:text="@string/travel_user_from" />
+
+    <TextView
+        android:id="@+id/travel_user_whocomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/travel_user_from"
+        android:layout_toRightOf="@+id/travel_user_from"
+        android:text="@string/travel_user_whocomment"
+        android:textColor="@color/app_theme" />
+
+    <TextView
+        android:id="@+id/travel_user_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/travel_user_whocomment"
+        android:layout_marginLeft="@dimen/travel_user_comment_marginleft"
+        android:layout_toRightOf="@+id/travel_user_whocomment"
+        android:text="@string/travel_user_comment" />
+
+    <TextView
+        style="@style/text_travel_focus"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/text_travel_focus_marginright"
+        android:text="@string/text_travel_focus" />
+
+
+
+</RelativeLayout>

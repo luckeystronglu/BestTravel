@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/actionbar"
+    android:orientation="vertical"
+    tools:context="com.qf.besttravel.MainActivity">
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_rg_height"
+        android:layout_marginTop="@dimen/activity_rg_mgtop"
+        android:padding="@dimen/activity_rg_padding"
+        android:background="@color/app_theme"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/search_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_rb_background"
+            android:text="@string/plan_search_hint"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/main_rb_textcolor"
+            android:button="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/activity_rg_padding10"
+            android:paddingTop="@dimen/activity_rg_padding6"
+            android:paddingBottom="@dimen/activity_rg_padding6"
+            android:drawableLeft="@drawable/icon_home_destination"
+            android:drawablePadding="@dimen/activity_rg_drawable_padding"
+            />
+
+    </RadioGroup>
+
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        app:tabIndicatorColor="@color/tab_indicator_color"
+        app:tabIndicatorHeight="@dimen/tab_indicator_height"
+        app:tabTextColor="@color/tab_textcolor"
+        app:tabTextAppearance="@style/text_travel_tab"
+        android:background="@color/app_theme"
+        app:tabSelectedTextColor="@color/tab_textcolor"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="@dimen/tab_layout_height"
+        />
+    <!-- app:tabSelectedTextColor="@color/tab_selected_textcolor"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/app_theme"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/travel_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

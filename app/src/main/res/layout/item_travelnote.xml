@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/item_travel_header" />
+
+    <ImageView
+        android:id="@+id/travel_big_img"
+        android:layout_width="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/travel_big_img_height" />
+
+    <HorizontalScrollView
+        android:background="#ccc"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_scrollView_img_height">
+        <LinearLayout
+            android:id="@+id/ll_img"
+            android:scrollbars="none"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/linearLayout_text_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <TextView
+            android:id="@+id/travel_article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/travel_article_title"
+            android:textStyle="bold"
+            android:textSize="@dimen/travel_article_title_textsize"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:animAlphaStart="1"
+            expandableTextView:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/world_note_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/note_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_theme"
+                    android:textSize="16sp"
+                    android:text="小明"
+                    />
+                <TextView
+                    android:id="@+id/note_user_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_theme"
+                    android:text=" : "
+                    />
+                <TextView
+                    android:id="@+id/note_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_theme"
+                    android:textSize="16sp"
+                    android:text="日本"
+                    />
+                <TextView
+                    android:id="@+id/note_noteji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_theme"
+                    android:textSize="16sp"
+                    android:text="旅行记("
+                    />
+                <TextView
+                    android:id="@+id/note_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_theme"
+                    android:textSize="16sp"
+                    android:text="14"
+                    />
+                <TextView
+                    android:id="@+id/note_pian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_theme"
+                    android:textSize="16sp"
+                    android:text="篇)"
+                    />
+
+            </LinearLayout>
+
+
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/frame_morebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="点击查看全文"
+                    android:layout_marginTop="6dp"
+                    android:textSize="14sp"
+                    android:textColor="#00f"
+                    android:clickable="true"
+                    />
+
+
+                <ImageButton
+                    android:id="@id/expand_collapse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:paddingBottom="40dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="45dp" />
+
+
+
+
+            </FrameLayout>
+
+
+          <!--  <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:padding="16dp" />-->
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+      <!--  <com.qf.widget.CollapsedTextView
+            android:id="@+id/travel_article_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/travel_article_summary_margintop"
+            android:textSize="@dimen/travel_article_summary_textsize"
+            android:text="@string/travel_article_summary"
+            android:maxLines="6"
+            android:ellipsize="end"
+            />
+             <Button
+            android:id="@+id/travel_note_morebtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="查看全文"
+            android:textSize="14sp"
+            android:background="#fff"
+            android:clickable="true"/>
+
+            -->
+
+
+       <!--改为帧布局前 <TextView
+            android:id="@+id/travel_note_morebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="点击查看全文"
+            android:textSize="14sp"
+            android:background="#fff"
+            android:clickable="true"/>-->
+
+
+
+        <!-- 标签存放的布局 -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:id="@+id/ll_travel_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                />
+        </HorizontalScrollView>
+
+
+        <View
+            android:layout_marginTop="@dimen/travel_view_margintop"
+            android:background="#dedada"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/travel_view_height"/>
+
+        <RelativeLayout
+            android:layout_margin="@dimen/travel_relative_num_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/likescount"
+                android:text="@string/travel_likescount"
+                android:drawableLeft="@drawable/icon_like_normal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/travel_tv_drawablepadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/commentcount"
+                android:layout_toRightOf="@+id/likescount"
+                android:text="@string/travel_commentcount"
+                android:drawableLeft="@drawable/icon_comment_normal"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/travel_tv_marginleft"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/travel_tv_drawablepadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/favCount"
+                android:layout_toRightOf="@+id/commentcount"
+                android:text="@string/travel_favCount"
+                android:drawableLeft="@drawable/icon_fav_normal"
+                android:layout_marginLeft="@dimen/travel_tv_marginleft"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/travel_tv_drawablepadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/travel_icon_plan_more_marginright"
+                android:src="@drawable/icon_plan_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginBottom="@dimen/travel_view_marginbottem"
+            android:background="@color/travel_bottemview_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/travel_view_bottem_height"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

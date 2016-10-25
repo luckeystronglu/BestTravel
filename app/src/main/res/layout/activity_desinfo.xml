@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:scrollable_autoMaxScrollViewId="@+id/des_info_proname"
+    ru.noties.scrollable.ScrollableLayout (外围类)
+    -->
+    <com.qf.widget.DesInfoScrollview
+        android:id="@+id/plan_desinfo_scro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_theme">
+
+                    <ImageView
+
+                        android:id="@+id/des_info_bigimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_placeholder" />
+                        <!--android:layout_marginTop="-70dp"-->
+
+                    <TextView
+                        android:id="@+id/des_info_withimg_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="云南"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/des_info_withimg_englishtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/des_info_withimg_text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="60dp"
+                        android:text="Yunnan"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <!--目的地scrollview列表-->
+            <include layout="@layout/desinfo_01_destination"/>
+
+            <!--地图线路相关-->
+            <include layout="@layout/desinfo_02_map"/>
+
+            <!--自定义行程-->
+            <include layout="@layout/desinfo_03_selftravel"/>
+
+            <!--相关氢游记-->
+            <include layout="@layout/desinfo_04_note_related"/>
+
+        </LinearLayout>
+    </com.qf.widget.DesInfoScrollview>
+
+    <RelativeLayout
+        android:id="@+id/relative_des_headinfo"
+        android:layout_width="match_parent"
+        android:background="@color/app_theme"
+        android:layout_height="70dp">
+        <!--android:alpha="0.6"-->
+
+        <TextView
+            android:id="@+id/des_info_proname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/plan_info_back_logo"
+
+            android:gravity="center_vertical|center"
+            android:paddingLeft="60dp"
+            android:paddingTop="10dp"
+            android:text="云南"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        <!--android:background="@color/app_theme"-->
+
+        <ImageView
+            android:id="@+id/plan_info_back_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true"
+            android:src="@drawable/search_back" />
+    </RelativeLayout>
+
+
+
+</FrameLayout>

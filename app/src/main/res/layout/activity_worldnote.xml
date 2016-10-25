@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <!-- <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+-->
+    <LinearLayout
+        android:id="@+id/relative_mapdays_head"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="18dp"
+        android:background="@color/app_theme"
+        android:orientation="horizontal"
+
+       >
+        <!--android:alpha="0.6"
+         android:layout_height="?android:attr/actionBarSize"-->
+
+
+        <ImageView
+            android:id="@+id/worldnote_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:clickable="true"
+            android:src="@drawable/search_back" />
+
+        <TextView
+            android:id="@+id/worldnote_areaname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="上海"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="旅行记"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/item_worldnote_header" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeFresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/travelnote_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

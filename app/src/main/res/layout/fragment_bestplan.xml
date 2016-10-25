@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:divider="@drawable/diliver_des_item"
+    android:showDividers="middle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientBanner_showGoods"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Hello World!"/>
+
+        <!--<FrameLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <com.qfkf.widget.loopviewpager.LoopViewPager
+                android:id="@+id/frag_plan_vpimg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+            <com.qfkf.widget.NavView
+                android:id="@+id/navView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:checked="@drawable/img_dot_white"
+                app:unchecked="@drawable/img_dot_gray"/>
+
+        </FrameLayout>-->
+
+
+
+       <!-- <ImageView
+            android:id="@+id/frag_plan_headimg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@mipmap/icon_guide_headimg"
+            android:scaleType="fitXY" />-->
+
+
+        <com.qf.widget.planlv.PlanListview
+        android:id="@+id/bestplan_lv_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</ScrollView>

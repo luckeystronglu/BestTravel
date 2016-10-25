@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <VideoView
+        android:id="@+id/guide_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_media_guide"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_guide_headimg"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/app_theme"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="了解氢气球的旅行黑科技"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ccc"
+            android:textSize="14sp"
+            android:text="30秒离线视频"/>
+
+        <ImageView
+            android:id="@+id/icon_mp4_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_play"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_media_hind"
+        android:background="#fff"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_guide_headimg"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/app_name_image"
+            />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/app_name_en_img"/>
+
+        <ImageView
+            android:id="@+id/click_enter_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guideimg_enter_app"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_look_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="再看一次"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            android:textColor="#ccc"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>

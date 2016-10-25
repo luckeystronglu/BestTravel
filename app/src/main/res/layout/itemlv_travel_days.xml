@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="56dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <TextView
+            android:id="@+id/tv_day_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DAY1：厦门"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+           />
+        <ImageView
+            android:layout_toRightOf="@+id/tv_day_destination"
+            android:layout_marginLeft="5dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/travel_map_zuobiao"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/map_travel_tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="10"
+        android:text="这是一条路线的简介"
+        android:textColor="#111010"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_days_scenery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

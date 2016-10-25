@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:divider="@drawable/diliver_des_item"
+    android:showDividers="end"
+    android:id="@+id/desinfo_note_relate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/des_related_travel_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="相关氢游记"
+        android:textColor="@color/bestplan_gray_textcolor"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/des_related_big_img"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@mipmap/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/des_note_img_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="#514c4c"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="8"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/travel_note_tv_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by"
+            android:textColor="@color/bestplan_gray_textcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/travel_note_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Mildred"
+            android:textColor="@color/app_theme" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/travel_note_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="就要发呆"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/des_note_tv_detail"
+        android:text="丽江处滇西北高原，是云南最著名的旅行地，以小资的大研古城、
+        宁静的束河古城、风光绝美的玉龙雪山而闻名，其周边还有可以泛舟骑马的拉市海、
+        历史悠久的茶马古道、景色壮丽的虎跳峡等可以一同游玩。"
+        android:maxLines="8"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+
+
+    <TextView
+        android:id="@+id/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="2357篇云南游记"
+        android:textColor="@color/app_theme"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

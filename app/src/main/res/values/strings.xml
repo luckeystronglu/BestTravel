@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">氢气球Travel</string>
+
+    <!--攻略相关-->
+    <string name="plan_search_hint">搜索目的地、游记与用户</string>
+
+    <!--travelorder_activity-->
+    <string name="travel_order_text">如何一键生成行程？</string>
+
+    <!--note游记相关-->
+    <string name="travel_user_title">娃娃鱼HHZ</string>
+    <string name="travel_user_from">来自</string>
+    <string name="travel_user_whocomment">氢XX</string>
+    <string name="travel_user_comment">推荐</string>
+    <string name="text_travel_focus">关注她</string>
+    <string name="travel_article_title">罗卡角偶遇陆地尽头XX</string>
+    <string name="travel_article_summary">XX罗卡角偶遇陆地尽头XX罗卡角偶遇陆地尽头XX罗卡角偶遇陆地尽头XX罗卡角偶遇陆地尽头XX罗卡角偶遇陆地尽头XX罗卡角偶遇陆地尽头XX罗卡角偶遇陆地尽头XX罗卡角偶遇陆地尽头XX</string>
+    <string name="travel_likescount">xx</string>
+    <string name="travel_commentcount">10</string>
+    <string name="travel_favCount">10</string>
+
+</resources>

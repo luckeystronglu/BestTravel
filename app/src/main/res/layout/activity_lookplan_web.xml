@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--android:paddingTop="30dp"-->
+
+    <WebView
+        android:id="@+id/web_straandtrev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/scenery_web_rela"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alpha="0.9"
+        android:background="@color/app_theme"
+        android:paddingTop="16dp"
+        app:layout_behavior=".AlphaBehavior"
+        >
+
+        <TextView
+            android:id="@+id/travel_map_days_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/scenery_web_back"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/scenery_web_back"
+            android:paddingLeft="10dp"
+            android:paddingTop="16dp"
+            android:text="旅行灵感"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        <!--android:background="@color/app_theme"-->
+
+        <ImageView
+            android:id="@+id/scenery_web_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/search_back" />
+
+        <ImageView
+            android:id="@+id/scenery_web_mapguide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/scenery_web_share"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/icon_map_navigation" />
+
+        <ImageView
+            android:id="@+id/scenery_web_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/plan_travel_share" />
+
+    </RelativeLayout>
+</FrameLayout>

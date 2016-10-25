@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:divider="@drawable/diliver_des_item"
+              android:showDividers="middle"
+              android:id="@+id/desinfo_self_travel"
+              android:visibility="gone"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:id="@+id/travel_list"
+        android:padding="10dp"
+        android:textColor="@color/bestplan_gray_textcolor"
+        android:textSize="18sp"
+        android:text="旅行榜单"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="16sp"
+        android:text="自定义行程:收藏榜单后自动生成"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+  <LinearLayout
+      android:id="@+id/line_self_travel"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

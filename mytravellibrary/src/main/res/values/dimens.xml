@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="slide_size">16sp</dimen>
+    <dimen name="slide_circle">18dp</dimen>
+    <dimen name="slide_label">18sp</dimen>
+</resources>

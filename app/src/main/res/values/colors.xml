@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_theme">#50D2DE</color>
+
+    <!--activity相关-->
+    <color name="main_rb_background">#fff</color>
+    <color name="main_rb_textcolor">#afacac</color>
+    <color name="tab_indicator_color">#fff</color>
+    <color name="tab_selected_textcolor">#00f</color>
+    <color name="tab_textcolor">#fff</color>
+
+    <!--攻略相关-->
+    <color name="bestplan_gray_textcolor">#afacac</color>
+
+    <!--游记相关-->
+    <color name="travel_bottemview_background">#f5f2f2</color>
+
+</resources>

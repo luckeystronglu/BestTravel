@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_tv_noteitem"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:background="#d1e0d8"
+        android:text="2015.12.29 加拿大"/>
+
+    <ImageView
+        android:id="@+id/travel_big_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/travel_big_img_height"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_scrollView_img_height"
+        android:scrollbars="none"
+        android:background="#ccc">
+
+        <LinearLayout
+            android:id="@+id/ll_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="none"></LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/linearLayout_text_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/travel_article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/travel_article_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/travel_article_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/travel_article_title"
+            android:textSize="@dimen/travel_article_title_textsize"
+            />
+
+
+        <!-- 标签存放的布局 -->
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_travel_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/travel_view_height"
+            android:layout_marginTop="@dimen/travel_view_margintop"
+            android:background="#dedada" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/travel_relative_num_margin">
+
+
+            <TextView
+                android:id="@+id/likescount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_like_normal"
+                android:drawablePadding="@dimen/travel_tv_drawablepadding"
+                android:gravity="center"
+                android:text="@string/travel_likescount" />
+
+            <TextView
+                android:id="@+id/commentcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/travel_tv_marginleft"
+                android:layout_toRightOf="@+id/likescount"
+                android:drawableLeft="@drawable/icon_comment_normal"
+                android:drawablePadding="@dimen/travel_tv_drawablepadding"
+                android:gravity="center"
+                android:text="@string/travel_commentcount" />
+
+            <TextView
+                android:id="@+id/favCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/travel_tv_marginleft"
+                android:layout_toRightOf="@+id/commentcount"
+                android:drawableLeft="@drawable/icon_fav_normal"
+                android:drawablePadding="@dimen/travel_tv_drawablepadding"
+                android:gravity="center"
+                android:text="@string/travel_favCount" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/travel_icon_plan_more_marginright"
+                android:src="@drawable/icon_plan_more" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/travel_view_bottem_height"
+            android:layout_marginBottom="@dimen/travel_view_marginbottem"
+            android:background="@color/travel_bottemview_background" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
